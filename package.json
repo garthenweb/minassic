@@ -10,5 +10,12 @@
 		"underscore":	"1.4.x"
 	},
 	"engine": "0.8.x",
-	"main": "index"
+	"main": "index",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/garthenweb/minassic"
+	},
+	"bugs": {
+		"url": "https://github.com/garthenweb/minassic/issues"
+	}
 }
