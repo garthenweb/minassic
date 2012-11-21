@@ -1,21 +1,29 @@
 {
-	"name": "minassic",
-	"author": "Jannick Garthen",
-	"description": "Easy asset minification and concatenation.",
-	"version": "0.1.0",
-	"dependencies": {
-		"csso": 		"1.3.x",
-		"uglify-js2": 	"2.1.x",
-		"MD5": 			"1.0.x",
-		"underscore":	"1.4.x"
-	},
-	"engine": "0.8.x",
-	"main": "index",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/garthenweb/minassic"
-	},
-	"bugs": {
-		"url": "https://github.com/garthenweb/minassic/issues"
-	}
+  "name": "minassic",
+  "author": {
+    "name": "Jannick Garthen"
+  },
+  "description": "Easy asset minification and concatenation.",
+  "version": "0.1.0",
+  "dependencies": {
+    "csso":       "1.3.x",
+    "uglify-js2": "2.2.x",
+    "MD5":        "1.0.x",
+    "underscore": "1.4.x"
+  },
+  "engine": "0.8.x",
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/garthenweb/minassic"
+  },
+  "bugs": {
+    "url": "https://github.com/garthenweb/minassic/issues"
+  },
+  "_id": "minassic@0.1.0",
+  "readme": "ERROR: No README.md file found!",
+  "dist": {
+    "shasum": "2f3934b8193c9b47ab5df18cbd5cd67c2675f63d"
+  },
+  "_from": "minassic@git://github.com/garthenweb/minassic.git"
 }
