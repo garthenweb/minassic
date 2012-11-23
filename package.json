@@ -4,7 +4,7 @@
     "name": "Jannick Garthen"
   },
   "description": "Easy asset minification and concatenation.",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "dependencies": {
     "csso":       "1.3.x",
     "uglify-js":  "2.2.x",
