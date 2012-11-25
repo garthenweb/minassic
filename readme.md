@@ -41,6 +41,7 @@ app.use(express.static(__dirname + '/public'));
 ### Swig Templating
 
 ```javascript
+var swig = require('swig');
 swig.init({
 	tags: {
 		minassic: Minassic.swig(minassic)
