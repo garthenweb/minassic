@@ -3,7 +3,7 @@
   "author": {
     "name": "Jannick Garthen"
   },
-  "description": "Easy asset minification and concatenation.",
+  "description": "Easy asset optimization without disturbing the development workflow.",
   "version": "0.2.1",
   "dependencies": {
     "clean-css":  "0.8.x",
@@ -20,11 +20,5 @@
   },
   "bugs": {
     "url": "https://github.com/garthenweb/minassic/issues"
-  },
-  "_id": "minassic@0.1.0",
-  "readme": "ERROR: No README.md file found!",
-  "dist": {
-    "shasum": "2f3934b8193c9b47ab5df18cbd5cd67c2675f63d"
-  },
-  "_from": "minassic@git://github.com/garthenweb/minassic.git"
+  }
 }
