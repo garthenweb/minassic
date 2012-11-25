@@ -1,4 +1,4 @@
-/* Require dependencies and create server modules
+/* Require dependencies and create server
 ---------------------------------------------------------------------------------------- */
 var http 	 = require('http');
 var express  = require('express');
@@ -6,17 +6,14 @@ var engines  = require('consolidate');
 var swig     = require('swig');
 var Minassic = require('../../index.js');
 
-
 var app = express();
 var server = http.createServer(app);
 
 /* Routing
 ---------------------------------------------------------------------------------------- */
-
 app.get('/', function(req, res) {
 	res.render('index');
 });
-
 
 /* Configuration
 ---------------------------------------------------------------------------------------- */
