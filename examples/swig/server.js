@@ -9,7 +9,6 @@ var Minassic = require('../../index.js');
 
 var app = express();
 var server = http.createServer(app);
-app.set('env', 'production');
 
 /* Routing
 ---------------------------------------------------------------------------------------- */
