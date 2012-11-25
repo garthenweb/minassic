@@ -6,7 +6,7 @@
   "description": "Easy asset minification and concatenation.",
   "version": "0.2.0",
   "dependencies": {
-    "csso":       "1.3.x",
+    "clean-css":  "0.8.x",
     "uglify-js":  "2.2.x",
     "MD5":        "1.0.x",
     "underscore": "1.4.x",
