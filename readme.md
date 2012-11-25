@@ -69,7 +69,7 @@ If you need a custom output format it is possible to define it between the `mina
 	<link href="@file" rel="stylesheet" media="screen">
 {% endminassic %}
 ```
-´@file´ will be replaced with the generated filename or if the flag `inline` is used with the string.
+`@file` will be replaced with the generated filename or if the flag `inline` is used with the string.
 
 ### Custom Templating
 All other template engiens could be served with cached files by running the following:
