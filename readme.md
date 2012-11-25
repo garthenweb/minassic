@@ -34,7 +34,7 @@ The server has to serve files directly from the cache folder. With Express it co
 var express  = require('express');
 var app 	 = express();
 
-app.use(express.static(__dirname + '/public'/cache, { maxAge: 311040000 }));
+app.use(express.static(__dirname + '/public/cache', { maxAge: 311040000 }));
 app.use(express.static(__dirname + '/public'));
 ```
 
@@ -67,7 +67,7 @@ If you need a custom output format it is possible to define it between the `mina
 {% minassic ["/dir/to/style.css", "/dir/to/other/style.css"] minify|concatenate %}
 	<link href="@file" rel="stylesheet" media="screen">
 {% endminassic %}
-´´´
+```
 ´@file´ will be replaced with the generated filename or if the flag `inline` is used with the string.
 
 ### Custom Templating
@@ -84,7 +84,6 @@ var output = minassic.output(files, {
     customTag: '<style>@file</style>', // is optional
     inline:    true // false if you like to use the default html and the files aren't inlined
 });
-
 ```
 
 ### Output
