@@ -109,7 +109,7 @@ Working examples can be found in the example section.
 
 ### Feedback and Bugs
 
-I love to here your feedback, please don't hesitate to send me an email!
-If you found any bugs, please report them at the issue section or fix them and just start a pull request.
+I love to hear your feedback, please don't hesitate to send me an email!
+If you find any bugs, please report them at the issue section or fix them and just start a pull request.
 
-Please be sure that this project is in early stage and can contain bugs.
+Please be sure that this project is in early stage and may contain bugs.
