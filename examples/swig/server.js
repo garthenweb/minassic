@@ -1,9 +1,9 @@
 /* Require dependencies and create server modules
 ---------------------------------------------------------------------------------------- */
 var http 	 = require('http');
-var express  = require('../../../express');
-var engines  = require('../../../consolidate');
-var swig     = require('../../../swig');
+var express  = require('express');
+var engines  = require('consolidate');
+var swig     = require('swig');
 var Minassic = require('../../index.js');
 
 
