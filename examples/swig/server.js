@@ -35,7 +35,7 @@ var config = {
 app.configure('production', function() {
 
 	// Override default flags for minify and concationate of all assets by default
-	config.minassic.flags = ['minify', 'concatenate'];
+	config.minassic.flags = false;
 
 });
 
