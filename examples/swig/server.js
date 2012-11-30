@@ -23,7 +23,7 @@ var config = {
 	minassic: {
 		assets: __dirname + '/public',
 		cache:  __dirname + '/public/cache',
-		flags: false
+		flags: ['minify', 'concatenate']
 	},
 
 	swig: {
