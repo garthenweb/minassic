@@ -5,6 +5,7 @@
   },
   "description": "Easy asset optimization without disturbing the development workflow.",
   "version": "0.2.1",
+  "keywords": ["minify", "minimize", "swig", "js", "css", "img", "base64", "inline", "asset"],
   "dependencies": {
     "clean-css":  "0.8.x",
     "uglify-js":  "2.2.x",
