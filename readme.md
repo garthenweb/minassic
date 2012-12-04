@@ -88,10 +88,10 @@ var output = minassic.output(files, {
 ```
 
 ## Flags ##
-* `minify` will minify css code by [clean-css](https://github.com/GoalSmashers/clean-css) library and js code by UglifyJS2. It will not have any effect to images at all
+* `minify` will minify css code by [clean-css](https://github.com/GoalSmashers/clean-css) library and js code by [UglifyJS2](https://github.com/mishoo/UglifyJS2). It will not have any effect to images
 * `concatenate` will join together all assets given in the map, but will distinguish between file types. It will not have any effect to images
 * `inline` will output the plain text in the file
-* `base64` will create an base64 string from the source and output it ready for a src-attribute
+* `base64` will create an base64 string from the source and output it for a src-attribute
 
 ## Output ##
 
