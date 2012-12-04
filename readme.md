@@ -13,7 +13,7 @@ Use npm to install the package:
 npm install minassic
 ```
 
-### Setting up
+## Setting up ##
 
 ```javascript
 var Minassic = require('minassic');
@@ -38,7 +38,7 @@ app.use(express.static(__dirname + '/public/cache', { maxAge: 311040000 }));
 app.use(express.static(__dirname + '/public'));
 ```
 
-### Swig Templating
+## Swig Templating ##
 
 ```javascript
 var swig = require('swig');
@@ -71,7 +71,7 @@ If you need a custom output format it is possible to define it between the `mina
 ```
 `@file` will be replaced with the generated filename or if the flag `inline` is used with the string.
 
-### Custom Templating
+## Custom Templating ##
 All other template engiens could be served with cached files by running the following:
 ``` javascript
 // will return an array of files
@@ -87,7 +87,14 @@ var output = minassic.output(files, {
 });
 ```
 
-### Output
+## Flags ##
+* `minify` will minify css code by [clean-css](https://github.com/GoalSmashers/clean-css) library and js code by UglifyJS2. It will not have any effect to images at all
+* `concatenate` will join together all assets given in the map, but will distinguish between file types. It will not have any effect to images
+* `inline` will output the plain text in the file
+* `base64` will create an base64 string from the source and output it ready for a src-attribute
+
+## Output ##
+
 By default Minassic is using the following output formates:
 
 ```html
@@ -103,13 +110,17 @@ By default Minassic is using the following output formates:
 <img src="@file" alt="">
 ```
 
-### More Examples
+## More Examples ##
 
 Working examples can be found in the example section.
 
-### Feedback and Bugs
+## Feedback and Bugs
 
 I love to hear your feedback, please don't hesitate to send me an email!
 If you find any bugs, please report them at the issue section or fix them and just start a pull request.
 
 Please be sure that this project is in early stage and may contain bugs.
+
+## License ##
+
+Licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
