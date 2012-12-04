@@ -71,6 +71,8 @@ If you need a custom output format it is possible to define it between the `mina
 ```
 `@file` will be replaced with the generated filename or if the flag `inline` is used with the string.
 
+Flags can be combined by a pipe (|). So it is for example also possible to combine three flags like `minify|concatenate|inline`. 
+
 ## Custom Templating ##
 All other template engiens could be served with cached files by running the following:
 ``` javascript
