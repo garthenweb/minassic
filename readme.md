@@ -78,7 +78,7 @@ All other template engiens could be served with cached files by running the foll
 ``` javascript
 // will return an array of files
 var files = minassic.run({
-    files: ['some.css', 'files.css',
+    files: ['some.css', 'files.css'],
     flags: ['inline']
 });
 
