@@ -26,7 +26,7 @@ var minassic = new Minassic({
 
 * `assets` is the location relative to all assets.
 * `cache` is the location where the compressed files will be saved.
-* `flags` is an array of flags which will always be passed to all files. By default it is an empty array. You can also set it to `false` to disable all flags globally. This can be usefull in development environment.
+* `flags` is an array of flags which will always be passed to all files. By default it is an empty array. You can also set it to `false` to disable all flags everywhere. This can be usefull in development environment.
 
 The server has to serve files directly from the cache folder. With Express it could look like this:
 
@@ -88,6 +88,9 @@ var output = minassic.output(files, {
     inline:    true // false if you like to use the default html and the files aren't inlined
 });
 ```
+
+## Grab all files in directory ##
+If you'd like to get all files (recursively) in one folder, you can insert `/folder/*` into the files-array.
 
 ## Flags ##
 * `minify` will minify css code by [clean-css](https://github.com/GoalSmashers/clean-css) library and js code by [UglifyJS2](https://github.com/mishoo/UglifyJS2). It will not have any effect to images

@@ -4,7 +4,7 @@
     "name": "Jannick Garthen"
   },
   "description": "Easy asset optimization without disturbing the development workflow.",
-  "version": "0.2.4",
+  "version": "0.2.2",
   "keywords": [
     "minify",
     "minimize",
@@ -14,7 +14,8 @@
     "img",
     "base64",
     "inline",
-    "asset"
+    "asset",
+    "uglify"
   ],
   "dependencies": {
     "clean-css": "0.8.x",
