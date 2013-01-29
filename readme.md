@@ -52,12 +52,12 @@ swig.init({
 Insert the `Minassic.swig` function into the tags object. The key can be whatever you like to, but remember it is later on used in the template. Important: The `Minassic.swig` function needs to get a Minassic-instance as its first parameter.
 
 ``` html
-{% minassic ["/dir/to/style.css", "/dir/to/other/style.css"] minify|concatenate %}{% endminassic %}
+{% minassic ["/dir/to/style.css", "/dir/to/other/style.css"] minify concatenate %}{% endminassic %}
 ```
 This will get the code from both files, minify and concatenate them and output it in a link attribute:
 
 ```html
-<link href="/style_e1f12bb7dac3422122922c99cf92bd07.css" rel="stylesheet">
+<link href="/e1f12bb7dac3422122922c99cf92bd07.css" rel="stylesheet">
 ```
 
 The `minify` and `concatenate` flags in this example could be removed if they are specified in the flags array while creating the Minassic object.
@@ -65,13 +65,13 @@ The `minify` and `concatenate` flags in this example could be removed if they ar
 If you need a custom output format it is possible to define it between the `minassic` tag.
 
 ```html
-{% minassic ["/dir/to/style.css", "/dir/to/other/style.css"] minify|concatenate %}
-	<link href="@file" rel="stylesheet" media="screen">
+{% minassic ["/dir/to/style.css", "/dir/to/other/style.css"] minify concatenate %}
+	<link href="@output" rel="stylesheet" media="screen">
 {% endminassic %}
 ```
-`@file` will be replaced with the generated filename or if the flag `inline` is used with the string.
+`@output` will be replaced with the generated filename or if the flag `inline` is used with the string.
 
-Flags can be combined by a pipe (|). So it is for example also possible to combine three flags like `minify|concatenate|inline`. 
+Flags can also be combined. So it is for example possible to combine three flags like `minify concatenate inline`. 
 
 ## Custom Templating ##
 All other template engiens could be served with cached files by running the following:
@@ -84,7 +84,7 @@ var files = minassic.run({
 
 // will return the html tags as a string
 var output = minassic.output(files, {
-    customTag: '<style>@file</style>', // is optional
+    customTag: '<style>@output</style>', // is optional
     inline:    true // false if you like to use the default html and the files aren't inlined
 });
 ```
@@ -104,15 +104,15 @@ By default Minassic is using the following output formates:
 
 ```html
 <!-- CSS -->
-<link href="@file" rel="stylesheet">
+<link href="@output" rel="stylesheet">
 <!-- CSS inline -->
-<style>@file</style>
+<style>@output</style>
 <!-- Javascript -->
-<script src="@file"></script>
+<script src="@output"></script>
 <!-- Javascript inline -->
-<script>@file</script>
+<script>@output</script>
 <!-- Images inline -->
-<img src="@file" alt="">
+<img src="@output" alt="">
 ```
 
 ## More Examples ##
@@ -125,6 +125,10 @@ I love to hear your feedback, please don't hesitate to send me an email!
 If you find any bugs, please report them at the issue section or fix them and just start a pull request.
 
 Please be sure that this project is in early stage and may contain bugs.
+
+## Knowen Bugs
+
+* Inlining big files is not a good idea because the server will save it in memory and garbage collection can never clean it up. Moreover, if you even try to inline big files like jQuery you will get an error by now.
 
 ## License ##
 
