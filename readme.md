@@ -133,11 +133,11 @@ I like to add more preprocessors in future. If you have requests to special comp
 {% endminassic %}
 ```
 Thanks to [sasslib](https://github.com/hcatlin/libsass) no ruby is required to run the compilation.
-A working example can be found on the examples folder.
+A working example can be found on the [examples folder](https://github.com/garthenweb/minassic/tree/master/examples).
 
 ## More Examples ##
 
-Working examples for swig and sass can be found in the [example folder](https://github.com/garthenweb/minassic/tree/master/examples).
+Working examples for swig and sass can be found in the [examples folder](https://github.com/garthenweb/minassic/tree/master/examples).
 
 ## Feedback and Bugs ##
 
@@ -148,7 +148,7 @@ Please be sure that this project is in early stage and may contain bugs.
 
 ## Migration Notes ##
 
-* v0.3 introduces precompilers. Because of this, a new configuration option was added to enable or disable the cache after the first request per file. By default the `disableCache` option is set to `false`. If your files are just compiled at the first request of your app turn it to `true` in development mode. Be sure that this option is set to `false` in production mode to reduce stress on your server!
+* v0.3 introduces precompilers. Because of this, a new configuration option was added to enable or disable the cache after the first request per file. By default the `disableCache` option is set to `false`. If your files are just compiled at the first request, turn the option to `true` in development mode. Be sure that this option is set to `false` in production mode to reduce stress on your server!
 
 ## Known Bugs ##
 
