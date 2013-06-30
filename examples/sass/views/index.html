@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <title>Minassic Sass Example</title>
+
+        {% minassic [
+            "/scss/normalize.scss",
+            "/scss/h5bp.scss",
+            "/scss/main.scss"
+        ] preprocess %}
+            <link href="@output" rel="stylesheet" media="screen">
+        {% endminassic %}
+
+    </head>
+    <body>
+
+        <h1>Sass Test</h1>
+        <p>Have a look into the compiled files</p>
+
+    </body>
+</html>

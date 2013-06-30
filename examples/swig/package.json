@@ -1,0 +1,13 @@
+{
+  "name": "Minassic-Swig-Example",
+  "author": "Jannick Garthen",
+  "description": "Example of minassic for swig.",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "3.3.x",
+    "swig": "0.14.x",
+    "consolidate": "0.x"
+  },
+  "engine": "0.8.x",
+  "main": "server.js"
+}

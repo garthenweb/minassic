@@ -6,7 +6,7 @@
         <title>Minassic Swig Example</title>
 
         {% minassic ["/css/normalize.css", "/css/h5bp.css"] %}
-            <link src="@file" rel="stylesheet" media="screen">
+            <link href="@output" rel="stylesheet" media="screen">
         {% endminassic %}
         {% minassic ["/css/main.css"] inline %}{% endminassic %}
 
@@ -14,12 +14,12 @@
     <body>
 
         {% minassic ["/img/base64.jpg"] base64 %}
-            <img src="@file" alt="Test-Image" width="500" height="335">
+            <img src="@output" alt="Test-Image" width="500" height="335">
         {% endminassic %}
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         {% minassic ["/js/vendor/jquery-1.8.3.js"] %}
-            <script>window.jQuery || document.write('<script src="@file"><\\/script>')</script>
+            <script>window.jQuery || document.write('<script src="@output"><\\/script>')</script>
         {% endminassic %}
 
         {% minassic ["/js/plugins.js", "/js/main.js"] %}{% endminassic %}

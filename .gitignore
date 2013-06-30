@@ -1,2 +1,4 @@
 node_modules/
+examples/**/node_modules
+examples/**/public/cache
 npm-debug.log

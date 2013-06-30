@@ -1,0 +1,21 @@
+@import "vendor/bourbon/_bourbon";
+body {
+	background: #1a1a1a;
+	text-align: center;
+	h1 {
+		color: #009fe3;
+	}
+	p {
+		color: #fff;
+		@include animation(fadein 1s infinite alternate ease-in-out);
+	}
+}
+
+@include keyframes(fadein) {
+  from {
+    @include transform(scale(0));
+  }
+  to {
+    @include transform(scale(1));
+  }
+}
