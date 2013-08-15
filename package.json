@@ -25,9 +25,9 @@
     "MD5": "1.0.x",
     "underscore": "1.4.x",
     "mime": "1.2.x",
-    "node-sass": "0.5.x"
+    "node-sass": "0.6.x"
   },
-  "engine": "0.8.x",
+  "engine": "0.10.x",
   "main": "index",
   "repository": {
     "type": "git",
