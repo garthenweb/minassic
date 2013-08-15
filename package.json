@@ -4,7 +4,7 @@
     "name": "Jannick Garthen"
   },
   "description": "Easy asset optimization without disturbing the development workflow.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "keywords": [
     "minify",
     "minimize",
